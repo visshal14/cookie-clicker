@@ -18,6 +18,9 @@ This is a simple React application that simulates a basic version of the popular
 - **Database:** MongoDB (using Mongoose)
 - **Fetch API:** For making HTTP requests to the backend.
 
+## Deployed Link:
+Frontend: https://cookie-clicker-c0fbe.web.app
+
 
 ## How to Run:
 
@@ -49,4 +52,6 @@ This is a simple React application that simulates a basic version of the popular
     - More complex prize mechanics.
     - Improved UI/UX.
     - User authentication.
+    - Backend Server may take upto 1 minute to start.
+
 - This README provides a basic overview. For more detailed information, refer to the code comments and individual files within the project.
