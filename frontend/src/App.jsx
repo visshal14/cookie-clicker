@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MousePointer, Gift, Star, Crown } from 'lucide-react';
-
+import { backendURL } from './utils/backendUrl';
 function App() {
   const [count, setCount] = useState(0);
   const [prizesWon, setPrizesWon] = useState(0);
@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/user');
+        const response = await fetch(`${backendURL}/api/user`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
@@ -29,7 +29,7 @@ function App() {
     setTimeout(() => setIsClicking(false), 100);
 
     try {
-      const response = await fetch('http://localhost:3001/api/click', { method: 'POST' });
+      const response = await fetch(`${backendURL}/api/click`, { method: 'POST' });
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

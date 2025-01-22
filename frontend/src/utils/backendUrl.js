@@ -1,0 +1,1 @@
+export const backendURL = "https://cookie-clicker-i9nd.onrender.com"
